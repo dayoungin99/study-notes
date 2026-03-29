@@ -177,6 +177,7 @@ Example output:
       - Most Use: _blank
   - title: Text that describes the link
            (Provides additional information about the link)
+    
 Example:
 <a href="https://google.com" target="_blank">Go to Google</a>
 
