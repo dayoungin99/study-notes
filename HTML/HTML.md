@@ -165,7 +165,7 @@ Example output:
 
 ## Inserts Links and Images
 ### 1. a tag
-- Create internal or external links in HTML
+- Creates internal or external links in HTML
 - Form: `<a href="Target URL or path" target="Link target behavior" title="Link description">...</a>`
 - href: Specifies the target URL or path, required attribute
   - When the target URL is not specified: Sets the `href` attribute to `#`
@@ -176,12 +176,15 @@ Example output:
       - Default: _self
       - Most Use: _blank
   - title: Text that describes the link
-           (Additional description that cannot be conveyed by the content of the `<a>` tag alone)
+           (Provides additional information about the link)
+Example:
+<a href="https://google.com" target="_blank">Go to Google</a>
+
 ### 2. img tag
 - Inserts an image object
 - Form: `<img src="image path" alt="image description">`
 - src (source): Specify the path of the image to be inserted
-  - **ALWAYS** relative to the location of the HTML file being viewed in the web browser
+  - Can be a relative or absolute path
 
 | Symbol | Description |
 |:------:|:-----------:|
