@@ -452,5 +452,44 @@ Example:
 - **colspan**: Merges columns
 - Attribute value: Number of cells to be merged
   - Leave the next row or column empty for the number of merged cells
-- Form: `<td rowspan="number">...</td>`  
+- Form: `<td rowspan="number">...</td>`
         `<td colspan="number">...</td>`
+### 6. thead, tfoot, tbody tags
+- **thead**: Groups rows that correspond to the *header* section
+- **tfoot**: Groups rows that correspond to the *footer* section
+- **tbody**: Groups rows that correspond to the *body* section
+- Optional, but the **order MUST be thead, tfoot, tbody** when use
+- thead, tfoot: Can be used **ONLY once**
+  - Rows grouped with `<thead>` must use `<th>` tags to create columns
+- Form:
+```html
+<table>
+  <thead>
+    <th>...</th>
+  </thead>
+  <tfoot>
+    <td>...</td>
+  </tfoot>
+  <tbody>
+    <td>...</td>
+  </tbody>
+</table>
+```
+
+### 7. col and colgroup tags
+- **col**: Groups a single column
+- **colgroup**: Groups two or more columns
+  - Uses with the span attribute
+- Form:
+```html
+<col>
+<colgroup span="Number of columns to be grouped">
+```
+
+- Primarily use to group an entire column to apply a uniform style
+- **MUST** uses after the `<caption>` tag if caption tag was used.
+  - The number of `<col>` or `<colgroup>` tags **MUST** match the number of columns used
+- **MUST** uses befroe the `<tr>` tag
+
+### 8. scope attribute
+- 
