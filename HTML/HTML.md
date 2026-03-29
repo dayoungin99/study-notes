@@ -275,3 +275,39 @@ Example
 | color | Select a color |
 | submit | Button to submit a form |
 | reset | Button to reset values entered in a form |
+
+- name: Name of the input element
+  - When the input element is sent to the server via a `<form>` tag, the value of the name attribute is used as its name
+  - The server identifies the input element using this name
+- value: Initial value of the input element
+  - Input elements usually receive values manually from the user
+  - This is used when an initial value needs to be set in certain situations
+### 3. label tag
+- Used to label interactive elements within a `<form>` tag
+- Allows selecting the element by clicking the label
+- Recommends for improving web accessibility
+- Depending on how it is used, it can be classified into implicit and explicit methods
+  - Implicit method: Include the interactive element inside the `<label>` tag
+Eample:
+```html
+<label>
+  ID
+  <input type="text">
+</label>
+```
+  - Explicit method: Set the for attribute of the `<label>` tag and the id attribute of the interactive element to the same value
+Example:
+```html
+<label for="userpw">Password</label> <!-- for in this line and id in the below line have to have the same value -->
+<input type="password" id="userpw">
+```
+  - Exceptionally, the implicit and explicit methods can be used together
+Example:
+```html
+<label for="username">
+  Name
+  <input type="text" id="username">
+</label>
+```
+
+### 4. fieldset and legend tag
