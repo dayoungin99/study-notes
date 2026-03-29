@@ -11,7 +11,7 @@
       - \<title>: Open tag  
       - My First Web Page!: Content  
       - \</title>: Close tag  <br>
-  b) Content NOT exists:
+b) Content NOT exists:
     - empty tag: \<br>
 4. Comment
   - Form: \<!-- Comment Content -->
