@@ -1,7 +1,7 @@
 # Study with HTML + CSS + JavaScript, <br>written by 김기수, Published from gilbut
 
 ## Basic Elements
-1. Tag
+### 1. Tag
   - Form: \<TagName>
 2. Attributions
   - Form: \<TagName AttrName="AttrValue">
