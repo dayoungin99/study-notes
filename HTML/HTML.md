@@ -19,7 +19,7 @@
 
   
 ## HTML Basic Structure
-'''html
+₩₩₩html
 \<!-- Use ! for writing the basic structure automatically -->
 <!DOCTYPE html> <!-- DTD(Document Type Definition): Defines the document type and tells the browser which HTML standard to use -->
 <html lang="en">
@@ -44,4 +44,4 @@
     <p>4<sup>2</sup>은 16입니다.</p>
 </body>
 </html>
-'''
+₩₩₩
