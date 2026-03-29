@@ -214,7 +214,8 @@ Example:
 ## Text Emphasis
 ### 1. strong tag
 - Indicates strong importance of the text
-- Form: `<strong>Text with important meaning</strong>`  <br>
+- Form: `<strong>Text with important meaning</strong>`
+
 Example:
 ```html
 <p>This facility is <strong>restricted to authorized personnel only</strong></p>
@@ -224,7 +225,8 @@ Example Output:
 
 ### 2. em tag
 - Indicates emphasis in the text (changes the tone)
-- Form: `<em>Text to be emphasized</em>`<br>
+- Form: `<em>Text to be emphasized</em>`
+
 Example:
 ```html
 <p>It's dangerous from here, so <em>do not proceed</em> under any circumstances</p>
