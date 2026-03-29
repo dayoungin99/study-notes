@@ -252,7 +252,7 @@ Example
 - type: Determines the type of interactive element based on the entered value
   
 | Attribute value | Description |
-|:---------------:|:-----------:|
+|:---------------|:-----------|
 | text | Single-line text input |
 | password | Password input |
 | tel | Enter a phone number format |
