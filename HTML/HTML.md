@@ -399,4 +399,8 @@ Example:
     - Example: `<input type="checkbox" id="name" name="name" value="name" checked>`
 - **placeholder**: Provides a hint about what value should be entered in the input element
   - Form: `<input placeholder="Hint about Input Value">
-    - Example: `<input type="tel" pladceholder="Please enter telephone number">`
+    - Example: `<input type="tel" pladceholder="Please enter the phone number">`
+
+## Creates Table
+- **Table**: Data arranged in a two-dimensional grid
+  - Consists of **rows**, **columns**, and **cells** where rows and columns intersect
