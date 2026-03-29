@@ -22,8 +22,8 @@
 ```html
 <!-- Use ! for writing the basic structure automatically -->
 <!DOCTYPE html> <!-- DTD(Document Type Definition): Defines the document type and tells the browser which HTML standard to use -->
-<html lang="en">
-<head>
+<html lang="en"> <!-- html: The beginning and end of an HTML document -->
+<head> <!--head: Defines the metadata of the HTML document (metadata provides information about the HTML document and is not directly displayed in the web browser; commonly used tags include <meta>, <title>, <link>, <style>, <script>, etc) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page!</title>
