@@ -61,7 +61,7 @@
 - Content inside the <ins> tag is <u>underlined</u>
 - Content inside the <del> tag has a ~~strikethrough~~
 7. sub and sup tags: Used to write subscript and superscript text
-Form: \<sub>Subscript text</sub>
+- Form: \<sub>Subscript text</sub>
       \<sup>Superscript text</sup>
 - sub example: H<sub>2</sub>O
 - sup example: 4<sup>2</sup> = 16
