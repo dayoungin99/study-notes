@@ -1,7 +1,6 @@
 # HTML Notes
 
-Study with HTML + CSS + JavaScript  
-*by 김기수 (Gilbut)*
+Study with HTML + CSS + JavaScript *by 김기수 (Gilbut)*
 
 ## HTML Basic Components
 ### 1. Tag
