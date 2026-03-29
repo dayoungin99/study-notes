@@ -116,7 +116,7 @@
   <li>List Content 2</li>
 </ul>
 ```
-- Example output:
+Example output:
 <ul>
   <li>List Content 1</li>
   <li>List Content 2</li>
@@ -131,7 +131,7 @@
   <li>List Content 2</li>
 </ol>
 ```
-- Example output:
+Example output:
 <ol>
   <li>List Content 1</li>
   <li>List Content 2</li>
@@ -149,7 +149,7 @@
   <dd>Description 2</dd>
 </dl>
 ```
-- Example output:
+Example output:
 <dl>
   <dt>Term 1</dt>
   <dd>Description 1</dd>
