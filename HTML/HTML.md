@@ -249,7 +249,7 @@ Example
   - type: required
   - name, value: optional
 - Form: `<input type="type" name="name" value="default value">`
-- type: Determines the type of interactive element based on the entered value
+- type: Determines the type of interactive element based on the entered value  
 | Attribute value | Description |
 |:---------------:|:-----------:|
 | text | Single-line text input |
