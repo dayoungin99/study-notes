@@ -20,6 +20,7 @@
   
 ## HTML Basic Structure
 '''
+
 \<!-- Use ! for writing the basic structure automatically -->
 <!DOCTYPE html> \<!-- DTD(Document Type Definition): Defines the document type and tells the browser which HTML standard to use -->
 <html lang="en">
