@@ -448,5 +448,5 @@ Example:
 - **colspan**: Merges columns
 - Attribute value: Number of cells to be merged
   - Leave the next row or column empty for the number of merged cells
-- Form: `<td rowspan="number">...</td>`
+- Form: `<td rowspan="number">...</td>`  
         `<td colspan="number">...</td>`
