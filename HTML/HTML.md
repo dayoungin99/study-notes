@@ -182,6 +182,7 @@ Example output:
 - Form: `<img src="image path" alt="image description">`
 - src (source): Specify the path of the image to be inserted
   - **ALWAYS** relative to the location of the HTML file being viewed in the web browser
+
 | Symbol | Description |
 |:------:|:-----------:|
 | ./ | Current Folder |
