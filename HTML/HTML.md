@@ -40,7 +40,7 @@
 
 ## Writing text
 1. hn tag: Used to represent text that indicates a title or topic
-- Form: '<hn>Title</hn>'
+- Form: `<hn>Title</hn>`
 - Six heading tags: \<h1> to \<h6>
 - \<h1> is the most important, and \<h6> is the least important
 - Text in \<h1> is the largest and boldest, and the size and weight gradually decrease from \<h2> to \<h6>
