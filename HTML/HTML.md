@@ -44,7 +44,7 @@
 - Six heading tags: \<h1> to \<h6>
 - \<h1> is the most important, and \<h6> is the least important
 - Text in \<h1> is the largest and boldest, and the size and weight gradually decrease from \<h2> to \<h6>
-- Search engines: Crawling headings from <h1> in order, so if \<h4> is skipped, \<h5> and \<h6> are not crawled
+- Search engines: Crawling headings from \<h1> in order, so if \<h4> is skipped, \<h5> and \<h6> are not crawled
 2. p tag: Used to write paragraphs in the main content
 - Form: \<p>Content</p>
 3. br tag: Used to insert a line break within a paragraph
