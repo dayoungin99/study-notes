@@ -179,6 +179,9 @@ Example output:
            (Provides additional information about the link)
     
 Example:
+```html
+<a href="https://google.com" target="_blank">Go to Google</a>
+```
 <a href="https://google.com" target="_blank">Go to Google</a>
 
 ### 2. img tag
