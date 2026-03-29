@@ -80,7 +80,7 @@
 ## Grouping
 ### 1. div tag
 - Grouping block elements and inline elements together
-- Form: `<div>   </div>`
+- Form: `<div>...</div>`
 ```html
 <!-- Code can be more complicated without section division -->
 <body>
@@ -104,7 +104,7 @@
 ```
 ### 2. span tag
 - Grouping inline elements
-- Form: `<span>   </span>`
+- Form: `<span>...</span>`
 - Example: `<p>The <span>highlight</span> scene of this movie is right here.</p>`
   - No change without applying CSS
  
@@ -166,7 +166,7 @@ Example output:
 ## Inserts Links and Images
 ### 1. a tag
 - Create internal or external links in HTML
-- Form: `<a href="Target URL or path" target="Link target behavior" title="Link description">   </a>`
+- Form: `<a href="Target URL or path" target="Link target behavior" title="Link description">...</a>`
 - href: Specifies the target URL or path, required attribute
   - When the target URL is not specified: Sets the `href` attribute to `#`
   - Form: `<a href="#">Link</a>`
@@ -187,3 +187,14 @@ Example output:
 |:------:|:-----------:|
 | ./ | Current Folder |
 | ../ | Parent Folder |
+
+- alt: Text that describes the inserted image object
+- src, alt: Required attributes
+### 3. Image Link
+- `<img>` tag is placed inside an `<a>` tag: Clicking the image will navigate to the specified link
+- Form:
+```html
+<a href="Target URL of path">
+  <img src="Image path" alt="Alternative text">
+</a>
+```
