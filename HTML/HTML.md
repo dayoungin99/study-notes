@@ -2,20 +2,20 @@
 
 ## HTML Basic Components
 ### 1. Tag
-  - Form: \<TagName>
+  - Form: `<TagName>`
 ### 2. Attributions
-  - Form: \<TagName AttrName="AttrValue">
+  - Form: `<TagName AttrName="AttrValue">`
 ### 3. Symtax  
 - Content exists:
-  - ex) \<title>My First Web Page!</title>  
+  - ex) `<title>My First Web Page!</title>`  
     - \<title>: Open tag  
     - My First Web Page!: Content  
     - \</title>: Close tag  
     - \<title> ... \</title>: Element  
 - Content NOT exists:
-  - empty tag: \<br>
+  - empty tag: `<br>`
 ### 4. Comment
-  - Form: \<!-- Comment Content -->
+  - Form: `<!-- Comment Content -->`
 
   
 ## HTML Basic Structure
@@ -46,22 +46,22 @@
 - Text in \<h1> is the largest and boldest, and the size and weight gradually decrease from \<h2> to \<h6>
 - Search engines: Crawling headings from \<h1> in order, so if \<h4> is skipped, \<h5> and \<h6> are not crawled
 2. p tag: Used to write paragraphs in the main content
-- Form: \<p>Content</p>
+- Form: `<p>Content</p>`
 3. br tag: Used to insert a line break within a paragraph
-- Form: \<br>
+- Form: `<br>`
 4. blockquote tag: Used to write block-level text quoted from a source
-- Form: \<blockquote cite="Source URL">Block-level text</blockquote>
+- Form: `<blockquote cite="Source URL">Block-level text</blockquote>`
 - For verified quotations, the source URL or reference should be specified using the cite attribute
 5. q tag: Used to write short, inline quotations within a paragraph
-- Form: \<q cite="Source URL">Short quotations</q>
+- Form: `<q cite="Source URL">Short quotations</q>`
 - content inside the <q> tag is enclosed in quotation marks ("")
 6. ins and del tags: Used to indicate newly added or deleted text
-- Form: \<ins>Added text</ins>
-        \<del>Deleted text</del>
+- Form: `<ins>Added text</ins>`
+        `<del>Deleted text</del>`
 - Content inside the <ins> tag is <u>underlined</u>
 - Content inside the <del> tag has a ~~strikethrough~~
 7. sub and sup tags: Used to write subscript and superscript text
-- Form: \<sub>Subscript text</sub>
-      \<sup>Superscript text</sup>
+- Form: `<sub>Subscript text</sub>`
+        `<sup>Superscript text</sup>`
 - sub example: H<sub>2</sub>O
 - sup example: 4<sup>2</sup> = 16
