@@ -1,6 +1,6 @@
 # HTML Notes
 
-> **HTML + CSS + JavaScript**
+> **HTML + CSS + JavaScript**  
 > by 김기수 (Gilbut)
 
 ## HTML Basic Components
