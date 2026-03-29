@@ -208,3 +208,29 @@ Example:
   <img src="Image path" alt="Alternative text">
 </a>
 ```
+
+<br>
+
+## Text Emphasis
+### 1. strong tag
+- Emphasizes the meaning of text by bolding
+- Form: `<strong>Text with important meaning</strong>`  
+Example
+```html
+<p>This facility is <strong>restricted to authorized personnel only</strong></p>
+```
+<p>This facility is <strong>restricted to authorized personnel only</strong></p>
+
+### 2. em tag
+- Emphasizes the meaning of text by italiczing
+- Form: `<em>Text to be emphasized</em>`  
+Example
+```html
+<p>It's dangerous from here, so <em>do not proceed</em> under any circumstances</p>
+```
+<p>It's dangerous from here, so <em>do not proceed</em> under any circumstances</p>  
+
+## Creates a Form
+- A form in HTML used to interact with the user, collect information, and send it to the server
+- Includes various interactive elements such as fields for entering username and password, button elements, etc.
+### 1. form tag
