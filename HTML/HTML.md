@@ -246,8 +246,8 @@ Example
 ### 2. input tag
 - Creates and input element, such as ID and password
 - Attributes: type, name, value
-  - type: required
-  - name, value: optional
+  - type: required attribute
+  - name, value: optional attributes
 - Form: `<input type="type" name="name" value="default value">`
 - type: Determines the type of interactive element based on the entered value
   
@@ -256,7 +256,7 @@ Example
 | text | Single-line text input |
 | password | Password input |
 | tel | Enter a phone number format |
-| number | Numeric input **ONLY** |
+| number | Allows numeric input (with validation) |
 | url | Enter a URL format |
 | search | Enter search text |
 | email | Enter email format |
@@ -311,3 +311,38 @@ Example:
 ```
 
 ### 4. fieldset and legend tag
+- fieldset: Groups elements with a box-shaped border
+- legend: Assigns a name to a group of elements
+- Form:
+```html
+<form action="#">
+  <fieldset>
+    <legend>Group Name</legend>
+    <!-- Omit interactive elements -->
+  </fieldset>
+</form>
+```
+Example:
+```html
+<form>
+  <fieldset>
+    <legend>Basic Information</legend>
+    <p>
+      <label for="userid">ID</label>
+      <input type="text" id="userid">
+    </p>
+  </fieldset>
+</form>
+```
+
+Example Output:
+<form>
+  <fieldset>
+    <legend>Basic Information</legend>
+    <p>
+      <label for="userid">ID</label>
+      <input type="text" id="userid">
+    </p>
+  </fieldset>
+</form>
+
