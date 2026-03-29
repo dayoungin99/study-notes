@@ -40,34 +40,34 @@
 
 ## HTML Text Elements
 ### 1. hn tag
-- Representing a title or topic
+- Represents a title or topic
 - Form: `<hn>Title</hn>`
 - Six levels: \<h1> to \<h6>
 - `<h1>` is the most important
 - Size decreases from `<h1>` to `<h6>`
 - Headings should follow a logical order for better SEO
 ### 2. p tag
--Writing paragraphs in the main content
+-Writes paragraphs in the main content
 - Form: `<p>Content</p>`
 ### 3. br tag
-- Inserting a line break within a paragraph
+- Inserts a line break within a paragraph
 - Form: `<br>`
 ### 4. blockquote tag
-- Writing block-level text quoted from a source
+- Writes block-level text quoted from a source
 - Form: `<blockquote cite="Source URL">Block-level text</blockquote>`
 - For verified quotations, the source URL or reference should be specified using the cite attribute
 ### 5. q tag
-- Writing short, inline quotations within a paragraph
+- Writes short, inline quotations within a paragraph
 - Form: `<q cite="Source URL">Short quotations</q>`
 - content inside the `<q>` tag is enclosed in quotation marks ("")
 ### 6. ins and del tags
-- Indicating newly added or deleted text
+- Indicates newly added or deleted text
 - Form: `<ins>Added text</ins>`
         `<del>Deleted text</del>`
 - Content inside the `<ins>` tag is <u>underlined</u>
 - Content inside the `<del>` tag has a ~~strikethrough~~
 ### 7. sub and sup tags
-- Writing subscript and superscript text
+- Writes subscript and superscript text
 - Form: `<sub>Subscript text</sub>`
         `<sup>Superscript text</sup>`
 - sub example: H<sub>2</sub>O
@@ -108,7 +108,7 @@
 
 ## List
 ### 1. ul tag
-- Create an unordered list (bullet list)
+- Creates an unordered list (bullet list)
 - Form:
 ```html
 <ul>
@@ -116,8 +116,14 @@
   <li>List Content 2</li>
 </ul>
 ```
+- Example output:
+<ul>
+  <li>List Content 1</li>
+  <li>List Content 2</li>
+</ul>
+
 ### 2. ol tag
-- Create an ordered list (numbered list)
+- Creates an ordered list (numbered list)
 - Form:
 ```html
 <ol>
@@ -125,9 +131,15 @@
   <li>List Content 2</li>
 </ol>
 ```
+- Example output:
+<ol>
+  <li>List Content 1</li>
+  <li>List Content 2</li>
+</ol>
+
 ### 3. dl tag
-- Create a definition list (a list of terms and their descriptions)
-- Use `<dt>` for terms and `<dd>` for descriptions instead of `<li>`
+- Creates a definition list (a list of terms and their descriptions)
+- Use `<dt>` for terms and `<dd>` for descriptions (instead of `<li>`)
 - Form:
 ```html
 <dl>
@@ -137,3 +149,13 @@
   <dd>Description 2</dd>
 </dl>
 ```
+- Example output:
+<dl>
+  <dt>Term 1</dt>
+  <dd>Description 1</dd>
+  <dt>Term 2</dt>
+  <dd>Description 2</dd>
+</dl>
+
+
+## Inserts Links and Images
