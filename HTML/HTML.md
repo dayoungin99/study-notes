@@ -368,15 +368,16 @@ Example:
     - Form: `<button type="type">Button Content</button>`
 ### 8. Additional Attributes in form-related Tags
 - **disabled**: Disable interactive elements
+  - User cannot interact with the element and its value is not submitted
+    - Skipped when submitting the form
   - Can be used in: input, textarea, select, button tags
   - Input elements: Text cannot be entered
   - List boxes: Items cannot be selected
   - Button elements: Button cannot be clicked
-  - Cannot edit + not submitted
   - Form: `<tag disabled>`
     - Example: `<input type="text" disabled>`
 - **readonly**: Makes interactive elements read-only
-  - Text cannot be entered in input elements
+  - User cannot edit the value, but it is still submitted with the form
   - Content can be selected or copied by dragging
   - Can be used in: textarea, input
     - Available type attribute values for the `<input>` tag:
@@ -399,8 +400,53 @@ Example:
     - Example: `<input type="checkbox" id="name" name="name" value="name" checked>`
 - **placeholder**: Provides a hint about what value should be entered in the input element
   - Form: `<input placeholder="Hint about Input Value">
-    - Example: `<input type="tel" pladceholder="Please enter the phone number">`
+    - Example: `<input type="tel" placeholder="Please enter the phone number">`
 
 ## Creates Table
 - **Table**: Data arranged in a two-dimensional grid
   - Consists of **rows**, **columns**, and **cells** where rows and columns intersect
+
+### 1. table tag
+- Creates a table
+- All table-related tags must be used inside the `<table>` tag
+- Form: `<table>...</table>`
+### 2. caption tag
+- Specifies the table caption
+- Optional, but **MUST** be written first inside the `<table>` tag when use
+- Form:
+```html
+<table>
+  <caption>Table Caption</caption>
+</table>
+```
+
+### 3. tr tag
+- Creates **a** row in a table
+- Uses multiple times to create multiple rows
+- Form:
+```html
+<table>
+  <tr>...</tr>
+</table>
+```
+
+### 4. th, td tags
+- th(table header): Creates a column that represents a header in a table
+- td(table data): Creates a column that represents regular data in a table
+- Form:
+```html
+<table>
+  <tr>
+    <th>Header</th>
+    <td>Data</td>
+  </tr>
+</table>
+```
+
+### 5. rowspan and colspan attributes
+- **rowspan**: Merges rows
+- **colspan**: Merges columns
+- Attribute value: Number of cells to be merged
+  - Leave the next row or column empty for the number of merged cells
+- Form: `<td rowspan="number">...</td>`
+        `<td colspan="number">...</td>`
