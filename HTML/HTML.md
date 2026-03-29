@@ -2,7 +2,7 @@
 
 ## Basic Elements
 1. Tag
-  - Form: <TagName>
+  - Form: \<TagName>
 2. Attributions
   - Form: <TagName AttrName="AttrValue">
 3. Symtax
