@@ -325,10 +325,10 @@ Example:
 
 ### 5. textarea tag
 - Creates a multi-line input element
-- Defines the initial value within the content area
+- Defines the initial value within the content area (between the opening and closing tags)
 - Form: `<textarea id="name" name="name">Initial Value</textarea>`
   - id, name: Optional attributes, but recommended
-    - id **MUST** be the same as for attribute in label tag
+    - id should match the for attribute of label (for accessibility)
 ### 6. select, option, optgroup tag
 - **select**: Creates a combo box
 - **option**: Adds items to the combo box
@@ -348,7 +348,7 @@ Example:
   - size: Specifies the number of visible items in the combo box
     - Attribute value: number
     - Default value: 1 (when omitted)
-    - Form: `C<select name="name" id="name" size="3">`
+    - Form: `<select name="name" id="name" size="3">`
   - multiple: Allows multiple items to be selected simultaneously
     - Window: Press Ctrl
     - Mac: Press cmd
@@ -372,20 +372,31 @@ Example:
   - Input elements: Text cannot be entered
   - List boxes: Items cannot be selected
   - Button elements: Button cannot be clicked
+  - Cannot edit + not submitted
   - Form: `<tag disabled>`
     - Example: `<input type="text" disabled>`
 - **readonly**: Makes interactive elements read-only
   - Text cannot be entered in input elements
   - Content can be selected or copied by dragging
-  - Can be used in: textarea, input tags
-    - Available type attribute values for the <input> tag:
+  - Can be used in: textarea, input
+    - Available type attribute values for the `<input>` tag:
       - text, search, url, tel, email, password, date, month, week, time, datetiem-local, number
+  - Cannot edit + submitted
   - Form: `<tag readonly>`
     - Example: `<input type="password" readonly>`
 - **maxlength**: Limits the number of characters that can be entered
   - Attribute Value: number
-  - Can be used in: textarea, input tags
-    - Available type attribute values for the <input> tag:
+  - Can be used in: textarea, input
+    - Available type attribute values for the `<input>` tag:
       - text, search, url, tel, email, password, date, month, week, time, datetiem-local, number
   - Form: `<tag maxlength="number">`
     - Example: `<input type="url" maxlength="4">`
+- **checked**: Displays the element as selected
+  - Can be used in: input
+    - Available type attribute values for the `<input>` tag:
+      - checkbox, radio (since a selectable element is required)
+  - Form: `<tag checked>`
+    - Example: `<input type="checkbox" id="name" name="name" value="name" checked>`
+- **placeholder**: Provides a hint about what value should be entered in the input element
+  - Form: `<input placeholder="Hint about Input Value">
+    - Example: `<input type="tel" pladceholder="Please enter telephone number">`
