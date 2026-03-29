@@ -39,12 +39,13 @@
 
 
 ## HTML Text Elements
-1. **hn tag**: Representing a title or topic
+### 1. hn tag
+- Representing a title or topic
 - Form: `<hn>Title</hn>`
 - Six levels: \<h1> to \<h6>
 - `<h1>` is the most important
 - Size decreases from `<h1>` to `<h6>`
-- Search engines: Crawling headings from `<h1>` in order, so if `<h4>` is skipped, `<h5>` and `<h6>` are not crawled
+- Headings should follow a logical order for better SEO
 2. **p tag**: Writing paragraphs in the main content
 - Form: `<p>Content</p>`
 3. **br tag**: Inserting a line break within a paragraph
@@ -54,14 +55,18 @@
 - For verified quotations, the source URL or reference should be specified using the cite attribute
 5. **q tag**: Writing short, inline quotations within a paragraph
 - Form: `<q cite="Source URL">Short quotations</q>`
-- content inside the <q> tag is enclosed in quotation marks ("")
+- content inside the `<q>` tag is enclosed in quotation marks ("")
 6. **ins and del tags**: Indicating newly added or deleted text
 - Form: `<ins>Added text</ins>`
         `<del>Deleted text</del>`
-- Content inside the <ins> tag is <u>underlined</u>
-- Content inside the <del> tag has a ~~strikethrough~~
+- Content inside the `<ins>` tag is <u>underlined</u>
+- Content inside the `<del>` tag has a ~~strikethrough~~
 7. **sub and sup tags**: Writing subscript and superscript text
 - Form: `<sub>Subscript text</sub>`
         `<sup>Superscript text</sup>`
 - sub example: H<sub>2</sub>O
 - sup example: 4<sup>2</sup> = 16
+
+
+## Grouping
+### 1. 
