@@ -311,8 +311,8 @@ Example:
 ```
 
 ### 4. fieldset and legend tag
-- fieldset: Groups elements with a box-shaped border
-- legend: Assigns a name to a group of elements
+- **fieldset**: Groups elements with a box-shaped border
+- **legend**: Assigns a name to a group of elements
 - Form:
 ```html
 <form action="#">
@@ -322,27 +322,70 @@ Example:
   </fieldset>
 </form>
 ```
-Example:
+
+### 5. textarea tag
+- Creates a multi-line input element
+- Defines the initial value within the content area
+- Form: `<textarea id="name" name="name">Initial Value</textarea>`
+  - id, name: Optional attributes, but recommended
+    - id **MUST** be the same as for attribute in label tag
+### 6. select, option, optgroup tag
+- **select**: Creates a combo box
+- **option**: Adds items to the combo box
+- **optgroup**: Groups items together
+- Form:
 ```html
-<form>
-  <fieldset>
-    <legend>Basic Information</legend>
-    <p>
-      <label for="userid">ID</label>
-      <input type="text" id="userid">
-    </p>
-  </fieldset>
-</form>
+<select>
+  <optgroup label="Group Name">
+    <option value="Value to be sent to the server">Value to be displayed in the web browser</option>
+  </optgroup>
+</select>
 ```
-
-Example Output:
-<form>
-  <fieldset>
-    <legend>Basic Information</legend>
-    <p>
-      <label for="userid">ID</label>
-      <input type="text" id="userid">
-    </p>
-  </fieldset>
-</form>
-
+- option: The value to be sent to the server can be specified using the value attribute
+  - value: If omitted, the text content is sent as the value
+- optgroup: Specifies the group name using the label attribute
+- Additional attributes: size, multiple, selected
+  - size: Specifies the number of visible items in the combo box
+    - Attribute value: number
+    - Default value: 1 (when omitted)
+    - Form: `C<select name="name" id="name" size="3">`
+  - multiple: Allows multiple items to be selected simultaneously
+    - Window: Press Ctrl
+    - Mac: Press cmd
+    - Form: `<select name="name" id="name" multiple>`
+  - selected: Default selected item can be changed
+    - Default: The first `<option>` tag
+    - Form: `<option value="name" selected>...</option>`
+   
+### 7. button tag
+- Creation methods:
+  - Sets the type attribute of an `<input>` tag to button
+  - Creates separately using the `<button>` tag
+    - Has a type attributes: submit, reset, button
+      - submit: Purpose of submitting a form to the server
+      - reset: Purpose of resetting the values entered in interactive elements
+      - button: Simple button
+    - Form: `<button type="type">Button Content</button>`
+### 8. Additional Attributes in form-related Tags
+- **disabled**: Disable interactive elements
+  - Can be used in: input, textarea, select, button tags
+  - Input elements: Text cannot be entered
+  - List boxes: Items cannot be selected
+  - Button elements: Button cannot be clicked
+  - Form: `<tag disabled>`
+    - Example: `<input type="text" disabled>`
+- **readonly**: Makes interactive elements read-only
+  - Text cannot be entered in input elements
+  - Content can be selected or copied by dragging
+  - Can be used in: textarea, input tags
+    - Available type attribute values for the <input> tag:
+      - text, search, url, tel, email, password, date, month, week, time, datetiem-local, number
+  - Form: `<tag readonly>`
+    - Example: `<input type="password" readonly>`
+- **maxlength**: Limits the number of characters that can be entered
+  - Attribute Value: number
+  - Can be used in: textarea, input tags
+    - Available type attribute values for the <input> tag:
+      - text, search, url, tel, email, password, date, month, week, time, datetiem-local, number
+  - Form: `<tag maxlength="number">`
+    - Example: `<input type="url" maxlength="4">`
