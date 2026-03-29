@@ -213,7 +213,7 @@ Example:
 
 ## Text Emphasis
 ### 1. strong tag
-- Emphasizes the meaning of text by bolding
+- Indicates strong importance of the text
 - Form: `<strong>Text with important meaning</strong>`  
 Example
 ```html
@@ -222,7 +222,7 @@ Example
 <p>This facility is <strong>restricted to authorized personnel only</strong></p>
 
 ### 2. em tag
-- Emphasizes the meaning of text by italiczing
+- Indicates emphasis in the text (changes the tone)
 - Form: `<em>Text to be emphasized</em>`  
 Example
 ```html
@@ -234,3 +234,43 @@ Example
 - A form in HTML used to interact with the user, collect information, and send it to the server
 - Includes various interactive elements such as fields for entering username and password, button elements, etc.
 ### 1. form tag
+- Represents a form; all form elements must be written inside the `<form>` tag
+- Form: `<form action="Server URL" method="get or post">...</form>`
+- Uses together with the action and method attributes
+- action: URL of the server to which values entered through the form elements will be sent
+  - Default: Current page URL
+  - NOT send anywhere and stay on the current page: `#`
+- method: The method used to send the entered values to the server (case-insensitive)
+  - Default: get
+  - Information that requires security: post
+### 2. input tag
+- Creates and input element, such as ID and password
+- Attributes: type, name, value
+  - type: required
+  - name, value: optional
+- Form: `<input type="type" name="name" value="default value">`
+- type: Determines the type of interactive element based on the entered value
+| Attribute value | Description |
+|:---------------:|:-----------:|
+| text | Single-line text input |
+| password | Password input |
+| tel | Enter a phone number format |
+| number | Numeric input **ONLY** |
+| url | Enter a URL format |
+| search | Enter search text |
+| email | Enter email format |
+| checkbox | Checkbox |
+| radio | Radio button |
+| file | File upload |
+| button | Button element |
+| image | Image as a button (like <img>; use src attribute, no alt) |
+| hidden | Hidden input (not visible to the user) |
+| date | Select a date (year, month, day)
+| datetime-local | Select a date and time according to user timezone (year, month, day, hour, minute) |
+| month | Select year and month |
+| week | Select year and week |
+| time | Select a time |
+| range | Slider to select a numeric range |
+| color | Select a color |
+| submit | Button to submit a form |
+| reset | Button to reset values entered in a form |
