@@ -215,19 +215,21 @@ Example:
 ### 1. strong tag
 - Indicates strong importance of the text
 - Form: `<strong>Text with important meaning</strong>`  
-Example
+Example:
 ```html
 <p>This facility is <strong>restricted to authorized personnel only</strong></p>
 ```
+Example Output:  
 <p>This facility is <strong>restricted to authorized personnel only</strong></p>
 
 ### 2. em tag
 - Indicates emphasis in the text (changes the tone)
 - Form: `<em>Text to be emphasized</em>`  
-Example
+Example:
 ```html
 <p>It's dangerous from here, so <em>do not proceed</em> under any circumstances</p>
 ```
+Example Output:
 <p>It's dangerous from here, so <em>do not proceed</em> under any circumstances</p>  
 
 ## Creates a Form
