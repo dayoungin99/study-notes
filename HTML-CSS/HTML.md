@@ -10,7 +10,7 @@
 ### 2. Attributions
   - Form: `<TagName AttrName="AttrValue">`
 
-### 3. Symtax  
+### 3. Syntax  
 - Content exists:
   - ex) `<title>My First Web Page!</title>`  
     - \<title>: Open tag  
