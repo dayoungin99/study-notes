@@ -93,27 +93,27 @@
 ### 1. div tag
 - Grouping block elements and inline elements together
 - Form: `<div>...</div>`
-```html
-<!-- Code can be more complicated without section division -->
-<body>
-  <p>Movie Introduction</p>
-  <p>This is a page introducing a movie.</p>
-  <p>TV Show Introduction</p>
-  <p>This is a page introducing a TV show.</p>
-</body>
-
-<!-- Grouping by sections -->
-<body>
-  <div class="movie">
+  ```html
+  <!-- Code can be more complicated without section division -->
+  <body>
     <p>Movie Introduction</p>
     <p>This is a page introducing a movie.</p>
-  </div>
-  <div class="tv">
     <p>TV Show Introduction</p>
-    <p>This is a page introducing a tv show.</p>
-  </div>
-</body>
-```
+    <p>This is a page introducing a TV show.</p>
+  </body>
+  
+  <!-- Grouping by sections -->
+  <body>
+    <div class="movie">
+      <p>Movie Introduction</p>
+      <p>This is a page introducing a movie.</p>
+    </div>
+    <div class="tv">
+      <p>TV Show Introduction</p>
+      <p>This is a page introducing a tv show.</p>
+    </div>
+  </body>
+  ```
 
 ### 2. span tag
 - Grouping inline elements
@@ -127,52 +127,52 @@
 ### 1. ul tag
 - Creates an unordered list (bullet list)
 - Form:
-```html
-<ul>
-  <li>List Content 1</li>
-  <li>List Content 2</li>
-</ul>
-```
-Example output:
-<ul>
-  <li>List Content 1</li>
-  <li>List Content 2</li>
-</ul>
+  ```html
+  <ul>
+    <li>List Content 1</li>
+    <li>List Content 2</li>
+  </ul>
+  ```
+  Example output:
+  <ul>
+    <li>List Content 1</li>
+    <li>List Content 2</li>
+  </ul>
 
 ### 2. ol tag
 - Creates an ordered list (numbered list)
 - Form:
-```html
-<ol>
-  <li>List Content 1</li>
-  <li>List Content 2</li>
-</ol>
-```
-Example output:
-<ol>
-  <li>List Content 1</li>
-  <li>List Content 2</li>
-</ol>
+  ```html
+  <ol>
+    <li>List Content 1</li>
+    <li>List Content 2</li>
+  </ol>
+  ```
+  Example output:
+  <ol>
+    <li>List Content 1</li>
+    <li>List Content 2</li>
+  </ol>
 
 ### 3. dl tag
 - Creates a definition list (a list of terms and their descriptions)
 - Use `<dt>` for terms and `<dd>` for descriptions (instead of `<li>`)
 - Form:
-```html
-<dl>
-  <dt>Term 1</dt>
-  <dd>Description 1</dd>
-  <dt>Term 2</dt>
-  <dd>Description 2</dd>
-</dl>
-```
-Example output:
-<dl>
-  <dt>Term 1</dt>
-  <dd>Description 1</dd>
-  <dt>Term 2</dt>
-  <dd>Description 2</dd>
-</dl>
+  ```html
+  <dl>
+    <dt>Term 1</dt>
+    <dd>Description 1</dd>
+    <dt>Term 2</dt>
+    <dd>Description 2</dd>
+  </dl>
+  ```
+  Example output:
+  <dl>
+    <dt>Term 1</dt>
+    <dd>Description 1</dd>
+    <dt>Term 2</dt>
+    <dd>Description 2</dd>
+  </dl>
 
 <br>
 
