@@ -545,6 +545,7 @@ Media types for each video file format
 
 ### 3. source tag
 - Specifies the resource (file) path and media type in <audio> and <video> tags
+- Optional, but recommended for web accessibility by registering multimedia in various formats
 - Form:
 ```html
 <audio controls>
@@ -554,5 +555,3 @@ Media types for each video file format
   <source src="File Path" type="Media Type">
 </video>
 ```
-
-- Optional, but recommended for web accessibility by registering multimedia in various formats
