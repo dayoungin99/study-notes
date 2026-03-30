@@ -639,7 +639,7 @@ Frequently used global attributes
 - **class** attribute: Assigns a class name to an element
   - Can be used as a class selector in CSS
   - The same class name can be shared by multiple elements
-  - Form: `<p class="red-color">...</p>
+  - Form: `<p class="red-color">...</p>`
 - **id** attribute: Assigns an ID to an element
   - Can be used as an ID selector in CSS
   - **MUST** be unique
