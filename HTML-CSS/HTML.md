@@ -652,4 +652,4 @@ Frequently used global attributes
   - Usually set in the lang attribute of the `<html>` tag
   - Form: `<html lang="ko">` `<p lang="de">Guten Tag</p>`
 - **data-\*** attribute: Createscustom attributes for the user
-  - Example: `<p date-name="spiderMan" data-hero="true">...</p>
+  - Example: `<p date-name="spiderMan" data-hero="true">...</p>`
