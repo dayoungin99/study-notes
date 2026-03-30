@@ -6,8 +6,10 @@
 ## HTML Basic Components
 ### 1. Tag
   - Form: `<TagName>`
+
 ### 2. Attributions
   - Form: `<TagName AttrName="AttrValue">`
+
 ### 3. Symtax  
 - Content exists:
   - ex) `<title>My First Web Page!</title>`  
@@ -17,6 +19,7 @@
     - \<title> ... \</title>: Element  
 - Content **NOT** exists:
   - empty tag: `<br>`
+
 ### 4. Comment
   - Form: `<!-- Comment Content -->`
 
@@ -51,26 +54,32 @@
 - `<h1>` is the most important
 - Size decreases from `<h1>` to `<h6>`
 - Headings should follow a logical order for better SEO
+
 ### 2. p tag
 -Writes paragraphs in the main content
 - Form: `<p>Content</p>`
+
 ### 3. br tag
 - Inserts a line break within a paragraph
 - Form: `<br>`
+
 ### 4. blockquote tag
 - Writes block-level text quoted from a source
 - Form: `<blockquote cite="Source URL">Block-level text</blockquote>`
 - For verified quotations, the source URL or reference should be specified using the cite attribute
+
 ### 5. q tag
 - Writes short, inline quotations within a paragraph
 - Form: `<q cite="Source URL">Short quotations</q>`
 - content inside the `<q>` tag is enclosed in quotation marks ("")
+
 ### 6. ins and del tags
 - Indicates newly added or deleted text
 - Form: `<ins>Added text</ins>`
         `<del>Deleted text</del>`
 - Content inside the `<ins>` tag is <u>underlined</u>
 - Content inside the `<del>` tag has a ~~strikethrough~~
+
 ### 7. sub and sup tags
 - Writes subscript and superscript text
 - Form: `<sub>Subscript text</sub>`
@@ -105,6 +114,7 @@
   </div>
 </body>
 ```
+
 ### 2. span tag
 - Grouping inline elements
 - Form: `<span>...</span>`
@@ -200,6 +210,7 @@ Example:
 
 - alt: Text that describes the inserted image object
 - src, alt: Required attributes
+
 ### 3. Image Link
 - `<img>` tag is placed inside an `<a>` tag: Clicking the image will navigate to the specified link
 - Form:
@@ -234,9 +245,12 @@ Example:
 Example Output:
 <p>It's dangerous from here, so <em>do not proceed</em> under any circumstances</p>  
 
+<br>
+
 ## Creates a Form
 - A form in HTML used to interact with the user, collect information, and send it to the server
 - Includes various interactive elements such as fields for entering username and password, button elements, etc.
+
 ### 1. form tag
 - Represents a form; all form elements must be written inside the `<form>` tag
 - Form: `<form action="Server URL" method="get or post">...</form>`
@@ -247,6 +261,7 @@ Example Output:
 - method: The method used to send the entered values to the server (case-insensitive)
   - Default: get
   - Information that requires security: post
+  
 ### 2. input tag
 - Creates and input element, such as ID and password
 - Attributes: type, name, value
@@ -286,6 +301,7 @@ Example Output:
 - value: Initial value of the input element
   - Input elements usually receive values manually from the user
   - This is used when an initial value needs to be set in certain situations
+  
 ### 3. label tag
 - Used to label interactive elements within a `<form>` tag
 - Allows selecting the element by clicking the label
@@ -333,6 +349,7 @@ Example:
 - Form: `<textarea id="name" name="name">Initial Value</textarea>`
   - id, name: Optional attributes, but recommended
     - id should match the for attribute of label (for accessibility)
+    
 ### 6. select, option, optgroup tag
 - **select**: Creates a combo box
 - **option**: Adds items to the combo box
@@ -370,6 +387,7 @@ Example:
       - reset: Purpose of resetting the values entered in interactive elements
       - button: Simple button
     - Form: `<button type="type">Button Content</button>`
+    
 ### 8. Additional Attributes in form-related Tags
 - **disabled**: Disable interactive elements
   - User cannot interact with the element and its value is not submitted
@@ -406,6 +424,8 @@ Example:
   - Form: `<input placeholder="Hint about Input Value">
     - Example: `<input type="tel" placeholder="Please enter the phone number">`
 
+<br>
+
 ## Creates Table
 - **Table**: Data arranged in a two-dimensional grid
   - Consists of **rows**, **columns**, and **cells** where rows and columns intersect
@@ -414,6 +434,7 @@ Example:
 - Creates a table
 - All table-related tags must be used inside the `<table>` tag
 - Form: `<table>...</table>`
+
 ### 2. caption tag
 - Specifies the table caption
 - Optional, but **MUST** be written first inside the `<table>` tag when use
@@ -454,6 +475,7 @@ Example:
   - Leave the next row or column empty for the number of merged cells
 - Form: `<td rowspan="number">...</td>`
         `<td colspan="number">...</td>`
+        
 ### 6. thead, tfoot, tbody tags
 - **thead**: Groups rows that correspond to the *header* section
 - **tfoot**: Groups rows that correspond to the *footer* section
@@ -480,16 +502,15 @@ Example:
 - **col**: Groups a single column
 - **colgroup**: Groups two or more columns
   - Uses with the span attribute
+- Primarily use to group an entire column to apply a uniform style
+- **MUST** uses after the `<caption>` tag if caption tag was used.
+  - The number of `<col>` or `<colgroup>` tags **MUST** match the number of columns used
+- **MUST** uses befroe the `<tr>` tag
 - Form:
 ```html
 <col>
 <colgroup span="Number of columns to be grouped">
 ```
-
-- Primarily use to group an entire column to apply a uniform style
-- **MUST** uses after the `<caption>` tag if caption tag was used.
-  - The number of `<col>` or `<colgroup>` tags **MUST** match the number of columns used
-- **MUST** uses befroe the `<tr>` tag
 
 ### 8. scope attribute
 - Only for improving web accessibility
@@ -497,6 +518,8 @@ Example:
 - Can **ONLY** be used with `<th>` tag
 - Attribute Values: col, row, colspan, rowspan
 - Form: `<th scope="row">...</th>` `<th scope="col">...</th>`
+
+<br>
 
 ## Multimedia Settings
 ### 1. audio tag
@@ -539,9 +562,9 @@ Video file formats supported by each web browser
 Media types for each video file format
 | File Format | Media Types |
 |:------------|:------------|
-| MP4 | video/mpeg |
-| WebM | audio/webm |
-| OGG | audio/ogg |
+| MP4 | video/mp4 |
+| WebM | video/webm |
+| OGG | video/ogg |
 
 ### 3. source tag
 - Specifies the resource (file) path and media type in <audio> and <video> tags
@@ -555,3 +578,43 @@ Media types for each video file format
   <source src="File Path" type="Media Type">
 </video>
 ```
+
+## Semantic tags for designing the structure of a web page
+- Semantic tag: The purpose or role of the tag is clear from its name alone
+### 1. header tag
+- Defines the header section in a web page
+- Form:
+```html
+<header>
+  Header components
+</header>
+```
+
+### 2. nav tag
+- Defines the navigation area that links to other sections within the page or to external pages
+- Form: `<nav>...</nav>`
+
+### 3. section tag
+- Defines a **logically related content area** in a web page
+- Usually contains one of the `<h1>`–`<h6>` heading tags
+- Form: `<section>...</section>`
+
+### 4. article tag
+- Defines an **independently usable content area** in a web page
+- Form: `<article>...</article>`
+
+### 5. aside tag
+- Uses for content that is not considered the main content or independent content of the page and cannot be marked as an `<article>` or `<section>`
+- Form: `<aside>...</aside>`
+
+### 6. footer tag
+- Defines the footer area of a web page
+- Usually at the bottom of the page
+- Contains elements such as copyright information, contact details, or a site map
+- Form: `<footer>...</footer>`
+
+### 7. main tag
+- Specifies the main content of a web page
+- Should not include elements that appear repeatedly across pages
+- Cannot contain `<article>`, `<aside>`, `<footer>`, `<header>`, or `<nav>` as child elements.
+- Form: `<main>...</main>`
