@@ -635,3 +635,18 @@ Frequently used global attributes
 | lang | language code | Specify the language information of the text used in an element |
 | hidden | hidden | Hide an element from the screen |
 | data-* | value | Allows the user to create custom attributes |
+
+- class attribute: Assigns a class name to an element
+  - Can be used as a class selector in CSS
+  - The same class name can be shared by multiple elements
+  - Form: `<p class="red-color">...</p>
+- id attribute: Assigns an ID to an element
+  - Can be used as an ID selector in CSS
+  - **MUST** be unique
+  - Form: `<h1 id="title">...</h1>`
+- sylte attribute: Uses to write cSS code inline
+- title attribute: Uses to add additional information to an element
+  - Displays as a tooltip when the mouse hovers over the element
+  - Form: `<p><span title="Additional Information">...</span></p>`
+- lang attribute:
+- **data-\*** attribute:
