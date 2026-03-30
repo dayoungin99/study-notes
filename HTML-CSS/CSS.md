@@ -24,6 +24,7 @@
 ### 1. Using Internal Style Sheets
 - Writes CSS code inside an HTML file
 - Writes CSS code as the content of the HTML <style> tag
+- Usually used inside the `<head>` tag
 - Form:
   ```css
   <style>
@@ -42,5 +43,6 @@ Example:
   </style>
 <head>
 <body>
-...
+  <h1>Internal Style Sheets></h1>
+</body>
 ```
