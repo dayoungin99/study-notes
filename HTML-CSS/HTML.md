@@ -252,7 +252,8 @@ Example Output:
 - Includes various interactive elements such as fields for entering username and password, button elements, etc.
 
 ### 1. form tag
-- Represents a form; all form elements must be written inside the `<form>` tag
+- Represents a form
+- All form elements must be written inside the `<form>` tag
 - Form: `<form action="Server URL" method="get or post">...</form>`
 - Uses together with the action and method attributes
 - action: URL of the server to which values entered through the form elements will be sent
