@@ -392,7 +392,7 @@ Example:
       - button: Simple button
     - Form: `<button type="type">Button Content</button>`
     
-### 8. Additional Attributes in form-related Tags
+### 8. Additional Attributes in Form-related Tags
 - **disabled**: Disable interactive elements
   - User cannot interact with the element and its value is not submitted
     - Skipped when submitting the form
@@ -583,7 +583,7 @@ Media types for each video file format
   </video>
   ```
 
-## Semantic tags for designing the structure of a web page
+## Semantic Tags for Designing the Structure of a Web Page
 - Semantic tag: The purpose or role of the tag is clear from its name alone
 ### 1. header tag
 - Defines the header section in a web page
@@ -626,7 +626,7 @@ Media types for each video file format
 
 <br>
 
-## Global attributes that can be used regardless of the tag type
+## Global Attributes that Can Be Used Regardless of the Tag Type
 - Attributes that can be used commonly across all tags, regardless of tag type
 
 Frequently used global attributes
