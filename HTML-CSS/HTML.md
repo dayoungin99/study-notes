@@ -492,4 +492,67 @@ Example:
 - **MUST** uses befroe the `<tr>` tag
 
 ### 8. scope attribute
-- 
+- Only for improving web accessibility
+- Specifies the scope of a header cell
+- Can **ONLY** be used with `<th>` tag
+- Attribute Values: col, row, colspan, rowspan
+- Form: `<th scope="row">...</th>` `<th scope="col">...</th>`
+
+## Multimedia Settings
+### 1. audio tag
+- Form: `<audio src="Audio File Path" controls></audio>`
+- src: Required attribute
+- controls: Displays the audio control panel
+
+Audio file formats supported by each web browser
+| Web Browser | MP3 | WAV | OGG |
+|:------------|:---:|:---:|:---:|
+| Internet Explorer (IE) | O | X | X |
+| Edge | O | O | O |
+| Chrome | O | O | O |
+| Firefox | O | O | O |
+| Safari | O | O | X |
+| Opera | O | O | O |
+
+Media types for each audio file format
+| File Format | Media Types |
+|:------------|:------------|
+| MP3 | audio/mpeg |
+| WAV | audio/wav |
+| OGG | audio/ogg |
+
+### 2. video tag
+- Form: `<video src="Video File Path" controls></video>`
+- src: Required attribute
+- controls: Displays a control panel that the user can operate
+
+Video file formats supported by each web browser
+| Web Browser | MP4 | WebM | Ogg |
+|:------------|:---:|:---:|:---:|
+| Internet Explorer (IE) | O | X | X |
+| Edge | O | O | O |
+| Chrome | O | O | O |
+| Firefox | O | O | O |
+| Safari | O | O | X |
+| Opera | O | O | O |
+
+Media types for each video file format
+| File Format | Media Types |
+|:------------|:------------|
+| MP4 | video/mpeg |
+| WebM | audio/webm |
+| OGG | audio/ogg |
+
+### 3. source tag
+- Specifies the resource (file) path and media type in <audio> and <video> tags
+- Form:
+```html
+<audio controls>
+  <source src="File Path" type="Media Type">
+</audio>
+<video controls>
+  <source src="File Path" type="Media Type">
+</video>
+```
+
+- Optional, but recommended for web accessibility by registering multimedia in various formats
