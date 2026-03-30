@@ -605,6 +605,7 @@ Media types for each video file format
 
 ### 5. aside tag
 - Uses for content that is not considered the main content or independent content of the page and cannot be marked as an `<article>` or `<section>`
+- Represents content indirectly related to the main content (e.g., sidebar, ads, related links)
 - Form: `<aside>...</aside>`
 
 ### 6. footer tag
@@ -616,5 +617,21 @@ Media types for each video file format
 ### 7. main tag
 - Specifies the main content of a web page
 - Should not include elements that appear repeatedly across pages
-- Cannot contain `<article>`, `<aside>`, `<footer>`, `<header>`, or `<nav>` as child elements.
+- Should not be placed inside `<article>`, `<aside>`, `<footer>`, `<header>`, or `<nav>` elements
 - Form: `<main>...</main>`
+
+<br>
+
+## Global attributes that can be used regardless of the tag type
+- Attributes that can be used commonly across all tags, regardless of tag type
+
+Frequently used global attributes
+| Attributes | Value | Description |
+|:-----------|:------|:------------|
+| class | value | Assigns a class value to an element<br>Class value: Can be used as a class selector in CSS |
+| id | value | Assigns an ID value to an element<br>ID value: Can be used as an ID selector in CSS |
+| style | style | Applies inline styles to an element |
+| title | text | Specifies additional information for an element<br>The additional information is displayed as a tooltip when the mouse hovers over the element<br>Tooltip: A balloon-shaped graphic that shows extra description |
+| lang | language code | Specify the language information of the text used in an element |
+| hidden | hidden | Hide an element from the screen |
+| data-* | value | Allows the user to create custom attributes |
