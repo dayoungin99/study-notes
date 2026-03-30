@@ -214,11 +214,11 @@ Example:
 ### 3. Image Link
 - `<img>` tag is placed inside an `<a>` tag: Clicking the image will navigate to the specified link
 - Form:
-```html
-<a href="Target URL of path">
-  <img src="Image path" alt="Alternative text">
-</a>
-```
+  ```html
+  <a href="Target URL of path">
+    <img src="Image path" alt="Alternative text">
+  </a>
+  ```
 
 <br>
 
@@ -309,7 +309,8 @@ Example Output:
 - Recommends for improving web accessibility
 - Depending on how it is used, it can be classified into implicit and explicit methods
   - Implicit method: Include the interactive element inside the `<label>` tag
-Eample:
+
+Example:
 ```html
 <label>
   ID
@@ -317,12 +318,14 @@ Eample:
 </label>
 ```
   - Explicit method: Set the for attribute of the `<label>` tag and the id attribute of the interactive element to the same value
+
 Example:
 ```html
 <label for="userpw">Password</label> <!-- for in this line and id in the below line have to have the same value -->
 <input type="password" id="userpw">
 ```
   - Exceptionally, the implicit and explicit methods can be used together
+
 Example:
 ```html
 <label for="username">
@@ -335,14 +338,14 @@ Example:
 - **fieldset**: Groups elements with a box-shaped border
 - **legend**: Assigns a name to a group of elements
 - Form:
-```html
-<form action="#">
-  <fieldset>
-    <legend>Group Name</legend>
-    <!-- Omit interactive elements -->
-  </fieldset>
-</form>
-```
+  ```html
+  <form action="#">
+    <fieldset>
+      <legend>Group Name</legend>
+      <!-- Omit interactive elements -->
+    </fieldset>
+  </form>
+  ```
 
 ### 5. textarea tag
 - Creates a multi-line input element
@@ -356,13 +359,13 @@ Example:
 - **option**: Adds items to the combo box
 - **optgroup**: Groups items together
 - Form:
-```html
-<select>
-  <optgroup label="Group Name">
-    <option value="Value to be sent to the server">Value to be displayed in the web browser</option>
-  </optgroup>
-</select>
-```
+  ```html
+  <select>
+    <optgroup label="Group Name">
+      <option value="Value to be sent to the server">Value to be displayed in the web browser</option>
+    </optgroup>
+  </select>
+  ```
 - option: The value to be sent to the server can be specified using the value attribute
   - value: If omitted, the text content is sent as the value
 - optgroup: Specifies the group name using the label attribute
@@ -440,34 +443,34 @@ Example:
 - Specifies the table caption
 - Optional, but **MUST** be written first inside the `<table>` tag when use
 - Form:
-```html
-<table>
-  <caption>Table Caption</caption>
-</table>
-```
+  ```html
+  <table>
+    <caption>Table Caption</caption>
+  </table>
+  ```
 
 ### 3. tr tag
 - Creates **a** row in a table
 - Uses multiple times to create multiple rows
 - Form:
-```html
-<table>
-  <tr>...</tr>
-</table>
-```
+  ```html
+  <table>
+    <tr>...</tr>
+  </table>
+  ```
 
 ### 4. th, td tags
 - th(table header): Creates a column that represents a header in a table
 - td(table data): Creates a column that represents regular data in a table
 - Form:
-```html
-<table>
-  <tr>
-    <th>Header</th>
-    <td>Data</td>
-  </tr>
-</table>
-```
+  ```html
+  <table>
+    <tr>
+      <th>Header</th>
+      <td>Data</td>
+    </tr>
+  </table>
+  ```
 
 ### 5. rowspan and colspan attributes
 - **rowspan**: Merges rows
@@ -485,19 +488,19 @@ Example:
 - thead, tfoot: Can be used **ONLY once**
   - Rows grouped with `<thead>` must use `<th>` tags to create columns
 - Form:
-```html
-<table>
-  <thead>
-    <th>...</th>
-  </thead>
-  <tfoot>
-    <td>...</td>
-  </tfoot>
-  <tbody>
-    <td>...</td>
-  </tbody>
-</table>
-```
+  ```html
+  <table>
+    <thead>
+      <th>...</th>
+    </thead>
+    <tfoot>
+      <td>...</td>
+    </tfoot>
+    <tbody>
+      <td>...</td>
+    </tbody>
+  </table>
+  ```
 
 ### 7. col and colgroup tags
 - **col**: Groups a single column
@@ -508,10 +511,10 @@ Example:
   - The number of `<col>` or `<colgroup>` tags **MUST** match the number of columns used
 - **MUST** uses befroe the `<tr>` tag
 - Form:
-```html
-<col>
-<colgroup span="Number of columns to be grouped">
-```
+  ```html
+  <col>
+  <colgroup span="Number of columns to be grouped">
+  ```
 
 ### 8. scope attribute
 - Only for improving web accessibility
@@ -571,25 +574,25 @@ Media types for each video file format
 - Specifies the resource (file) path and media type in <audio> and <video> tags
 - Optional, but recommended for web accessibility by registering multimedia in various formats
 - Form:
-```html
-<audio controls>
-  <source src="File Path" type="Media Type">
-</audio>
-<video controls>
-  <source src="File Path" type="Media Type">
-</video>
-```
+  ```html
+  <audio controls>
+    <source src="File Path" type="Media Type">
+  </audio>
+  <video controls>
+    <source src="File Path" type="Media Type">
+  </video>
+  ```
 
 ## Semantic tags for designing the structure of a web page
 - Semantic tag: The purpose or role of the tag is clear from its name alone
 ### 1. header tag
 - Defines the header section in a web page
 - Form:
-```html
-<header>
-  Header components
-</header>
-```
+  ```html
+  <header>
+    Header components
+  </header>
+  ```
 
 ### 2. nav tag
 - Defines the navigation area that links to other sections within the page or to external pages
