@@ -46,3 +46,29 @@ Example:
   <h1>Internal Style Sheets></h1>
 </body>
 ```
+
+### 2. Using External Style Sheets
+- Creates a separate file to write CSS code and links it to the HTML document
+- Extension of the separate file: .css
+  - Use the <link> tag to connect it in the HTML document
+- Most common
+- Form: `<link rel="stylesheet" href="css file path">`
+
+### 3. Using Inline Style
+- Writes CSS code in the style attribute that can be used in HTML tags
+- Writes CSS code directly in the tag
+  - Selector part in the basic CSS syntax is not required
+- Form: `<tag style="CSS code">...</tag>`
+
+<br>
+
+## Using Basic Selectors
+### 1. Universal Selector
+- Selects all elements in HTML at once as a selector
+- Using the * symbol
+- Form: `*{/* CSS Code */}`
+
+### 2. Tag Selector
+- Specifies the selector using the HTML tag name
+- Selects all elements that match the tag name specified in the selector at once
+- Form: `tagname{/* CSS Code */}`
