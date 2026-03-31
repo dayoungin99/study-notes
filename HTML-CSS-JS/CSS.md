@@ -72,3 +72,48 @@ Example:
 - Specifies the selector using the HTML tag name
 - Selects all elements that match the tag name specified in the selector at once
 - Form: `tagname{/* CSS Code */}`
+
+### 3. ID Selector
+- Specifies the selector using the value of the id attribute in an HTML tag
+- Prefix the value with the **#** symbol to distinguish it
+- **MUST** be a unique value within a single HTML document
+- Form: `#id-attribute-value{/* CSS Code */}`
+
+### 4. Class Selector
+- Specifies the selector using the value of the class attribute in an HTML tag
+- Adds a dot (.) prefix to the property value
+- Most common
+- class attribute:
+  - Can have reusable values
+  - Can be applied in multiple places if a class is well defined
+- Form: `.class-attribute-value{/* CSS Code */}`
+
+### 5. Basic Attribute Selector
+- Defines a selector using an HTML element’s attribute and its value
+- Form: `[attribute]{/* CSS Code */}`
+  - Selects all elements with the same attribute, regardless of its value and element type
+- Specifies both the attribute and its value to apply styles only to elements that exactly match them
+- Form: `[attribute=value]{/* CSS Code */}`
+- Can be used together with other selectors: Tag, ID, Class Selectors
+  - Form: `tag/id/class-selector[attribute-selector]{}`
+ 
+### 6. String Attribute Selector
+- Selects elements whose attribute value exactly matches a specific string
+- Basic principle: similar to the basic attribute selector, but uses a different matching method
+
+Format of a string attribute selector
+
+| Format | Description |
+|:-------|:------------|
+| \[attribute~=string] | Selects elements whose attribute value contains the string (word-based) |
+| \[attribute|=string] | Selects elements whose attribute value is exactly the string <br>or starts with the string followed by a hyphen |
+| \[attribute^=string] | Selects elements whose attribute value starts with the string
+| \[attribute$=string] | Selects elements whose attribute value ends with the string
+| \[attribute*=string] | Selects elements whose attribute value contains the string (based on the entire value)
+
+<br>
+
+## Using a Combinator Selector
+- Combinator selector: a selector that enriches the meaning when used together with a basic selector
+
+### 1. Group Selector
